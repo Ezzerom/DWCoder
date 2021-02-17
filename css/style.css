@@ -1681,6 +1681,83 @@ ol {
       .copyright-area .ca-links a:last-child {
         margin-right: 0; }
 
+/*---------------------
+  Contact
+-----------------------*/
+
+.contact-section {
+  background: #0d0d0d;
+  padding: 70px 0;
+}
+
+.contact-text .contact-title {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.contact-text .contact-title h3 {
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.contact-form .dt-leave-comment form .input-list input {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form .input-list input::-webkit-input-placeholder {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form .input-list input::-moz-placeholder {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form .input-list input:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form .input-list input::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form .input-list input::placeholder {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form textarea {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form textarea::-webkit-input-placeholder {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form textarea::-moz-placeholder {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form textarea:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form textarea::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form textarea::placeholder {
+  color: #c4c4c4;
+}
+
+.contact-form .dt-leave-comment form button {
+  background: #680606;
+  font-size: 14px;
+}
+
+
+        
+
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 @media only screen and (min-width: 1200px) {
   .container {
