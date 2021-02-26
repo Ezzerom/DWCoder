@@ -1,4 +1,3 @@
-
 /*------------------------------------------------------------------
 1.  Template default CSS
 	1.1	Variables
@@ -113,7 +112,7 @@ ol {
 	margin-bottom: 35px;
 	h5 {
 		color: $white-color;
-		font-size: 20px;
+		font-size: 28px;
 		font-weight: 700;
 		text-transform: uppercase;
 		font-style: italic;
@@ -596,6 +595,10 @@ ol {
 			}
 		}
 	}
+
+	.logo-transformation img:hover{
+		transform: scale(1.5,1.5);
+	}
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
 		background: transparent;
@@ -725,6 +728,9 @@ ol {
 	a {
 		display: inline-block;
 	}
+	img:hover{
+		transform: scale(1.5,1.5);
+	}
 }
 
 .nav-options {
@@ -831,7 +837,7 @@ ol {
 								right: -25px;
 								top: 2px;
 								content: "/";
-								color: #444444;
+								color: #ffffff;
 							}
 							a {
 								padding: 0;
@@ -943,7 +949,8 @@ ol {
 				&.active {
 					a {
 						background: $primary-color;
-						color: $Black-color;
+						color: #F44336;
+						font-weight:700px;
 					}
 				}
 				&:hover {
@@ -1976,6 +1983,7 @@ ol {
 .footer-section {
 	background: #080808;
 	padding-top: 60px;
+	padding-bottom: 25px;
 }
 
 .footer-about {
@@ -2013,6 +2021,25 @@ ol {
 	}
 }
 
+
+.footer-about .fa-logo img:hover {
+	transform: scale(1.5,1.5);
+} 
+.copyright-footer {
+	background: #080808;
+	padding-bottom: 15px;
+	font-size: 14px;
+	text-align:center;
+	color: #ffffff;
+		a {
+			font-size: 14px;
+			color: #ffff00;
+			font-weight: 700;
+			letter-spacing: .5px;
+			line-height: 20px;
+		}
+
+}
 .editor-choice {
 	.ec-item {
 		margin-bottom: 30px;
@@ -2199,8 +2226,142 @@ ol {
 	font-size: 14px;
 }
 
+/*---------------------
+  Categories Grid
+-----------------------*/
 
+.categories-grid-section {
+	background: #0d0d0d;
+	padding: 70px 0;
+}
 
+.cg-item {
+	margin-bottom: 35px;
+}
+
+.cg-item .cg-pic {
+	position: relative;
+	height: 257px;
+}
+
+.cg-item .cg-pic .label {
+	display: inline-block;
+	padding: 2px 12px 2px 12px;
+	background: rgba(194, 0, 0, 0.5);
+	-webkit-transform: skewX(-15deg);
+	-ms-transform: skewX(-15deg);
+	transform: skewX(-15deg);
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+}
+
+.cg-item .cg-pic .label span {
+	-webkit-transform: skewX(15deg);
+	-ms-transform: skewX(15deg);
+	transform: skewX(15deg);
+	display: inline-block;
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: 500;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.cg-item .cg-text {
+	padding-top: 25px;
+}
+
+.cg-item .cg-text h5 {
+	margin-bottom: 8px;
+}
+
+.cg-item .cg-text h5 a {
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 28px;
+}
+
+.cg-item .cg-text ul {
+	margin-bottom: 14px;
+}
+
+.cg-item .cg-text ul li {
+	list-style: none;
+	font-size: 12px;
+	color: #666666;
+	font-style: italic;
+	display: inline-block;
+	position: relative;
+	margin-right: 28px;
+}
+
+.cg-item .cg-text ul li i {
+	margin-right: 4px;
+}
+
+.cg-item .cg-text ul li span {
+	color: #c20000;
+}
+
+.cg-item .cg-text ul li:last-child {
+	margin-right: 0;
+}
+
+.cg-item .cg-text ul li:last-child:after {
+	display: none;
+}
+
+.cg-item .cg-text ul li:after {
+	position: absolute;
+	right: -18px;
+	top: 0;
+	content: "/";
+	color: #666666;
+}
+
+.cg-item .cg-text p {
+	margin-bottom: 0;
+}
+
+/*---------------------
+  Página de Estrenos
+-----------------------*/
+
+.breadcrumb-text h3 {
+	color: #ffffff;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.breadcrumb-text h3 span {
+	color: #ffff00;
+}
+
+.breadcrumb-text .bt-option a {
+	font-size: 15px;
+	color: #eaeaea;
+	display: inline-block;
+	margin-right: 10px;
+	position: relative;
+}
+
+.breadcrumb-text .bt-option a:after {
+	position: absolute;
+	right: -10px;
+	top: 1px;
+	content: "/";
+	color: #666666;
+}
+
+.breadcrumb-text .bt-option span {
+	font-size: 15px;
+	color: #ffff00;
+	display: inline-block;
+}
 
 
 

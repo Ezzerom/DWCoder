@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------------------------------------
 1.  Template default CSS
 	1.1	Variables
@@ -89,7 +90,7 @@ ol {
   margin-bottom: 35px; }
   .section-title h5 {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
     font-style: italic;
@@ -489,6 +490,8 @@ ol {
           color: #c4c4c4; }
           .humberger-menu-wrapper .slicknav_nav li .dropdown li a:hover {
             color: #e10000; }
+  .humberger-menu-wrapper .logo-transformation img:hover {
+    transform: scale(1.5, 1.5); }
   .humberger-menu-wrapper .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
     background: transparent;
@@ -588,6 +591,8 @@ ol {
   padding: 44px 0; }
   .logo a {
     display: inline-block; }
+  .logo img:hover {
+    transform: scale(1.5, 1.5); }
 
 .nav-options {
   background: #9e0303;
@@ -675,7 +680,7 @@ ol {
               right: -25px;
               top: 2px;
               content: "/";
-              color: #444444; }
+              color: #ffffff; }
             .nav-options .nav-menu ul li .megamenu-wrapper .mw-nav li a {
               padding: 0;
               background: transparent;
@@ -763,7 +768,8 @@ ol {
         margin-right: 0; }
       .nav-options .nav-menu ul li.active a {
         background: #FFFF00;
-        color: #000; }
+        color: #F44336;
+        font-weight: 700px; }
       .nav-options .nav-menu ul li:hover > a {
         background: #FFFF00;
         text-shadow: 1px 0px 0px #000; }
@@ -1574,7 +1580,8 @@ ol {
 -----------------------*/
 .footer-section {
   background: #080808;
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding-bottom: 25px; }
 
 .footer-about {
   margin-bottom: 30px; }
@@ -1602,6 +1609,22 @@ ol {
       -webkit-transform: skewX(15deg);
       -ms-transform: skewX(15deg);
       transform: skewX(15deg); }
+
+.footer-about .fa-logo img:hover {
+  transform: scale(1.5, 1.5); }
+
+.copyright-footer {
+  background: #080808;
+  padding-bottom: 15px;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff; }
+  .copyright-footer a {
+    font-size: 14px;
+    color: #ffff00;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 20px; }
 
 .editor-choice .ec-item {
   margin-bottom: 30px;
@@ -1681,82 +1704,179 @@ ol {
       .copyright-area .ca-links a:last-child {
         margin-right: 0; }
 
+/*----------------------------------------*/
+/* 9. Página de Contacto
+/*----------------------------------------*/
 /*---------------------
   Contact
 -----------------------*/
-
 .contact-section {
   background: #0d0d0d;
-  padding: 70px 0;
-}
+  padding: 70px 0; }
 
 .contact-text .contact-title {
   margin-bottom: 36px;
-  text-align: center;
-}
+  text-align: center; }
 
 .contact-text .contact-title h3 {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  margin-bottom: 16px;
-}
+  margin-bottom: 16px; }
 
 .contact-form .dt-leave-comment form .input-list input {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form .input-list input::-webkit-input-placeholder {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form .input-list input::-moz-placeholder {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form .input-list input:-ms-input-placeholder {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form .input-list input::-ms-input-placeholder {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form .input-list input::placeholder {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form textarea {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form textarea::-webkit-input-placeholder {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form textarea::-moz-placeholder {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form textarea:-ms-input-placeholder {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form textarea::-ms-input-placeholder {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form textarea::placeholder {
-  color: #c4c4c4;
-}
+  color: #c4c4c4; }
 
 .contact-form .dt-leave-comment form button {
   background: #680606;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
+/*---------------------
+  Categories Grid
+-----------------------*/
+.categories-grid-section {
+  background: #0d0d0d;
+  padding: 70px 0; }
 
-        
+.cg-item {
+  margin-bottom: 35px; }
+
+.cg-item .cg-pic {
+  position: relative;
+  height: 257px; }
+
+.cg-item .cg-pic .label {
+  display: inline-block;
+  padding: 2px 12px 2px 12px;
+  background: rgba(194, 0, 0, 0.5);
+  -webkit-transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  transform: skewX(-15deg);
+  position: absolute;
+  left: 15px;
+  bottom: 15px; }
+
+.cg-item .cg-pic .label span {
+  -webkit-transform: skewX(15deg);
+  -ms-transform: skewX(15deg);
+  transform: skewX(15deg);
+  display: inline-block;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase; }
+
+.cg-item .cg-text {
+  padding-top: 25px; }
+
+.cg-item .cg-text h5 {
+  margin-bottom: 8px; }
+
+.cg-item .cg-text h5 a {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 28px; }
+
+.cg-item .cg-text ul {
+  margin-bottom: 14px; }
+
+.cg-item .cg-text ul li {
+  list-style: none;
+  font-size: 12px;
+  color: #666666;
+  font-style: italic;
+  display: inline-block;
+  position: relative;
+  margin-right: 28px; }
+
+.cg-item .cg-text ul li i {
+  margin-right: 4px; }
+
+.cg-item .cg-text ul li span {
+  color: #c20000; }
+
+.cg-item .cg-text ul li:last-child {
+  margin-right: 0; }
+
+.cg-item .cg-text ul li:last-child:after {
+  display: none; }
+
+.cg-item .cg-text ul li:after {
+  position: absolute;
+  right: -18px;
+  top: 0;
+  content: "/";
+  color: #666666; }
+
+.cg-item .cg-text p {
+  margin-bottom: 0; }
+
+/*---------------------
+  Página de Estrenos
+-----------------------*/
+.breadcrumb-text h3 {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px; }
+
+.breadcrumb-text h3 span {
+  color: #ffff00; }
+
+.breadcrumb-text .bt-option a {
+  font-size: 15px;
+  color: #eaeaea;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative; }
+
+.breadcrumb-text .bt-option a:after {
+  position: absolute;
+  right: -10px;
+  top: 1px;
+  content: "/";
+  color: #666666; }
+
+.breadcrumb-text .bt-option span {
+  font-size: 15px;
+  color: #ffff00;
+  display: inline-block; }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 @media only screen and (min-width: 1200px) {
